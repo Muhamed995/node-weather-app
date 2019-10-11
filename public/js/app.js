@@ -11,7 +11,7 @@ messageOne.textContent='From Js'
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     const locationValue= weatherValue.value;
-        fetch('http://localhost:3000/weather?address='+locationValue).then((response)=>{
+        fetch('/weather?address='+locationValue).then((response)=>{
             response.json().then((data)=>{
                 if(data.error){
                     console.log(data.error); 
