@@ -63,11 +63,16 @@ const address = req.query.address;
                     return console.log(error);
                     
                 }
+                
                 res.send({
                     forecast:forecastData.summary,
+                    minTemp:forecastData.temperatureLow,
                     location:data.location,
                     temperature:forecastData.temperature + 'C'
                 })
+                console.log(forecastData);
+
+                
                 
                 
                 
