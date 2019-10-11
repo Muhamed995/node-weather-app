@@ -1,6 +1,3 @@
-console.log('Hello');
-
-
 
 const weatherForm=document.querySelector('form');
 const weatherValue=document.querySelector('.weatherInput');
